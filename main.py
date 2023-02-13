@@ -1,7 +1,13 @@
 # Import the required libraries and modules
+# Import the required libraries and modules
 import openai
+import os
+import pickle
 import google.auth
 from googleapiclient.discovery import build
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from googleapiclient.errors import HttpError
 
 # Initialize the OpenAI API client
 openai.api_key = "YOUR_OPENAI_API_KEY"
